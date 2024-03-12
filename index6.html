@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu Điều Kiện</title>
+</head>
+<body>
+<script>
+
+    // let score = +prompt("Nhập vào điểm: ")
+    // if (score >= 90) {
+    //     console.log("Tốt");
+    // } else if (score >= 70 && score <= 89) {
+    //     console.log("Khá");
+    // } else if (score >= 50 && score < 70) {
+    //     console.log("Trung bình");
+    // } else {
+    //     console.log("Yếu");
+    // }
+
+
+    // let age = +prompt("Tuổi");
+    // if(age >= 18){
+    //     document.write("Đủ Tuổi")
+    // };
+
+    // let a = +prompt("Trị số");
+    // if( a % 2 == 0){
+    //     document.write("Hello");
+    // }else {
+    //     document.write("Hi");
+    // };
+
+    // let a = +prompt("a");
+    // let b = +prompt("b");
+    // if ( a>b){
+    //     document.write("Tổng");
+    // }else if(a==b){
+    //     document.write("HiHi");
+    // }else {
+    //     document.write("Tích");
+    // };
+
+    const a = +prompt("Nhập a:");
+    const b = +prompt("Nhập b:");
+    const c = +prompt("Nhập c:");
+    let max = a;
+    if( a > b){
+        max = b > c ? b : c;
+    }else {
+        max = a > c ? a : c;
+    }
+    console.log("Số Lớn Nhât", max);
+
+
+</script>
+</body>
+</html>

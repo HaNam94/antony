@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh So Ngay Trong Thang</title>
+</head>
+<body>
+<div>
+    <label for="thang">Thang</label>
+    <input id="thang" name="thang">
+    <input type="submit" name="submit" value="Tinh thang" onclick="tinhSoNgay()">
+</div>
+<p id="songay"></p>
+<script>
+    function tinhSoNgay(){
+        let thang = parseInt( document.getElementById("thang").value);
+        let soNgay;
+        switch (thang) {
+            case 1 , 3, 5, 7, 8, 10, 12:
+                soNgay = 31;
+                break;
+            case 4, 6, 9, 11:
+                soNgay = 30;
+                break;
+            case 2:
+                soNgay = "28 hoac 29"
+                break;
+        }
+        document.getElementById("songay").innerHTML = ("So ngay cua thang " + thang + " la " + soNgay+ " ngay");
+    }
+</script>
+</body>
+</html>
